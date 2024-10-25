@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="container p-2" >
+    <div class="row align-items-center">
+        <!-- Logo on the left -->
+        <div class="col d-flex align-items-center">
+            <h1 class="h6  mb-0" style="font-size:15px; color:green; font-weight: bold" >SHIPMENT CHARGES</h1>
+        </div>
+        <!-- Button on the right -->
+        <div class="col text-end">
+            <a class="btn  btn-primary  btn-sm" style="font-size:13px;color: white; background-color: green" href="@Url.Page("/AddCharges")">Add Buy & Sell</a>
+        </div>
+    </div>
+
+   
+</div>

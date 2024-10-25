@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyRazorPagesApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MyRazorPagesApp.styles.css" asp-append-version="true" />
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+        }
+
+        body {
+            /* Ensures the body takes the full width */
+            width: 100%; /* Optional */
+        }
+
+        .container {
+            max-width: 100%; /* Remove default container max-width */
+            padding: 0; /* Remove padding from container */
+        }
+
+        main {
+            padding: 0; /* Remove padding from main */
+            margin: 0;  /* Remove margin from main */
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+ 
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
